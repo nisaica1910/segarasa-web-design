@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">           <!-- setup html -->
+	<title>SegaRasa</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">         <!-- navigasi bar -->
+		<div class="logo">           <!-- logo -->
+			<a href="index.html"><img src="images/Logo SegaRasa.png" width="200px"> </a><!-- gambar logo -->
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>		<!--isi navigasi -->
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="images/cart.png" width="30px" height="30px">
+		</a> <!-- gambar tas -->
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	<center>
+	<div class="row">
+		<div class="col-2">
+			<h1>FRESH AND FRIENDLY</h1> <!-- ngasih konten kata kata atau kata kata persuasif-->
+			<a href="products.html" class="btn">Explore Now &#8594;</a> <!-- tombol buat eksplor lebih jauh --> <!-- nambahin simbol panah -->
+		</div>
+		<div class="col-2">
+			<img src="images/sayur buah home.jpg" width="400px" height="300px">> <!-- gambar 2 orang di beranda -->
+		</div>
+	</div>
+	</center>
+	</div>
+	</div>
+
+	<!--------- featured products ---------->
+	<div class="small-container">
+		<h2 class="title">Fruit Category</h2>
+		<div class="row">
+			<div class="col-4">
+				<a href="products-detail.html"><img src="images/stroberi.jpg"></a>
+				<a href="products-detail.html"><h4>Strawberry</h4> </a>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$10.50</p>
+			</div>
+			<div class="col-4">
+				<img src="images/shine muscat.webp">
+				<h4>Shine Muscat Grape</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$14.99</p>
+			</div>
+			<div class="col-4">
+				<img src="images/semangka.jpg">
+				<h4>Watermelon</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$6.70 </p>
+			</div>
+			<div class="col-4">
+				<img src="images/nanas.jpg">
+				<h4>Pineapple</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$4</p>
+			</div>
+		</div>
+
+		<h2 class="title">Veggie Category</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/wortel.jpg">
+				<h4>Carrot</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$8/kg</p>
+			</div>
+			<div class="col-4">
+				<img src="images/paprika-1.jpg">
+				<h4>Paprika</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$12.99/kg</p>
+			</div>
+			<div class="col-4">
+				<img src="images/pakcoy.jpg">
+				<h4>Pakcoy</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$5/kg</p>
+			</div>
+			<div class="col-4">
+				<img src="images/bayam.jpg">
+				<h4>Spinach</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$2.80/kg</p>
+			</div>
+		</div>
+		<h2 class="title">Pack Edition</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/mix fruit2.jpg">
+				<h4>Mix Fruit</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$24.99</p>
+			</div>
+			<div class="col-4">
+				<img src="images/mix veg.jpeg">
+				<h4>Mix Veggie</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<p>$22.99</p>
+			</div>
+		</div>
+	</div>
+	<!-------------------- offers ------------------>
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/shine muscat2.webp" class="offer-img" height="300" width="300">
+					
+				</div>
+				<div class="col-2">
+					<h1>BUY 1 GET 1 !!</h1>
+					<h3>Only at Friday</h3>
+					<a href="" class="btn">Buy Now &#8594;</a>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<!----------------- testimonial ----------------->
+	<div class="testimonial">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<i class="fa fa-quote-lef"></i>
+					<p>SUKAAA BGT SAYURNYA FRESH, AKU PALING SUKA KALO ADA DISKON HEHE</p>
+					<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<img src="images/uzui.jpg">
+				<h3>Uzui</h3>
+
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-lef"></i>
+					<p>suka sekali beli buah di sini benar2 segar, sebelum melawan gon saya selalu sempatkan makan buah dari SegaRasa agar tetap kuat<3 </p>
+					<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<img src="images/hisoka.jpg">
+				<h3>Hisoka Tamvan</h3>
+
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-lef"></i>
+					<p>Fresh, harga sesuai kualitas, istri saya suka sekali makan buah dari sini. Doakan semoga anak saya sehat, terimakasih SegaRasa sudah menyediakan buah segar dikala istri saya sedang ngidam</p>
+					<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<img src="images/minato.jpg">
+				<h3>Yondaime Minato-sama</h3>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+ <!------ footer ------>
+ <div class="footer">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="footer-col-1">
+ 				<h3>Download Our App</h3>
+ 				<p>Download App for Android and Ios mobile phone.</p>
+ 				<div class="app-logo">
+ 					<img src="images/play-store.png">
+ 					<img src="images/app-store.png">
+ 				</div>
+ 			</div>
+ 			<div class="footer-col-2">
+ 				<img src="images/Logo SegaRasa.png">
+ 			</div>
+ 			<div class="footer-col-4">
+ 				<h3>Follow Us</h3>
+ 				<ul>
+ 					<li>Facebook</li>
+ 					<li>Twitter</li>
+ 					<li>Instagram</li>
+ 					<li>Youtube</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 		<hr>
+ 		<p class="copyright">Copyright 2020 - FarmCaa</p>
+ 	</div>
+ </div>
+
+ <!------------------ js for toggle menu --------------------->
+ <script>
+ 	var MenuItems = document.getElementById("MenuItems");
+
+ 	MenuItems.style.maxHeight ="0px";
+
+ 	function menutoggle(){
+ 		if(MenuItems.style.maxHeight == "0px")
+ 		{
+ 			MenuItems.style.maxHeight = "200px";
+ 		}
+ 		else
+ 		{
+ 			MenuItems.style.maxHeight = "0px";
+ 		}
+ 	}
+ </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">           <!-- setup html -->
+	<title>All Products - SegarRasa</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">         <!-- navigasi bar -->
+		<div class="logo">           <!-- logo -->
+			<img src="images/Logo SegaRasa.png" width="200px"> <!-- gambar logo -->
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>		<!--isi navigasi -->
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"> <!-- gambar tas --></a>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	</div>
+
+<!-------- single product details ------->
+
+	<div class="">
+		<div class="row">
+			<div class="col-3">
+				<img src="images/Logo SegaRasa.png" width="1000px">
+				<div class="words">
+			<h1>Welcome to SegaRasa</h1>
+
+			<p><h4>SegaRasa is a portal for purchasing fresh and high-quality fruits and vegetables. All our produce is grown by farmers across Indonesia who ensure the freshness and quality of their products.</h4></p><br>
+			<p><h4>Our goal is to be a convenient and user-friendly platform for food shopping while maintaining the highest level of service quality. We aim to assist our customers in shopping efficiently, allowing them to focus on other important matters in their daily lives.</h4></p>	
+				</div>
+				</div>
+			</div>
+<br>
+
+ <!------ footer ------>
+ <div class="footer">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="footer-col-1">
+ 				<h3>Download Our App</h3>
+ 				<p>Download App for Android and Ios mobile phone.</p>
+ 				<div class="app-logo">
+ 					<img src="images/play-store.png">
+ 					<img src="images/app-store.png">
+ 				</div>
+ 			</div>
+ 			<div class="footer-col-2">
+ 				<img src="images/Logo SegaRasa.png">
+ 			</div>
+ 			<div class="footer-col-4">
+ 				<h3>Follow Us</h3>
+ 				<ul>
+ 					<li>Facebook</li>
+ 					<li>Twitter</li>
+ 					<li>Instagram</li>
+ 					<li>Youtube</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 		<hr>
+ 		<p class="copyright">Copyright 2023 - FarmCaa</p>
+ 	</div>
+ </div>
+
+ <!------------------ js for toggle menu --------------------->
+ <script>
+ 	var MenuItems = document.getElementById("MenuItems");
+
+ 	MenuItems.style.maxHeight ="0px";
+
+ 	function menutoggle(){
+ 		if(MenuItems.style.maxHeight == "0px")
+ 		{
+ 			MenuItems.style.maxHeight = "200px";
+ 		}
+ 		else
+ 		{
+ 			MenuItems.style.maxHeight = "0px";
+ 		}
+ 	}
+ </script>
+
+<!----- js forproduct gallery ----->
+<script>
+	var ProductImg = document.getElementById("ProductImg");
+	var SmallImg = document.getElementsByClassName("small-img")
+	SmallImg[0].onclick = function(){
+		ProductImg.src = SmallImg[0].src;
+	}
+	SmallImg[1].onclick = function(){
+		ProductImg.src = SmallImg[1].src;
+	}
+	SmallImg[2].onclick = function(){
+		ProductImg.src = SmallImg[2].src;
+	}
+	SmallImg[3].onclick = function(){
+		ProductImg.src = SmallImg[3].src;
+	}
+
+
+</script>
+
+
+</body>
+</html>
